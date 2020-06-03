@@ -7,7 +7,7 @@ from django.shortcuts import render
     # render(request,'html filename along with extension')
 
 def temp(request):
-    return render(request,'h1.html')
+    return render(request,'h1.html',context={'data':'','data1':''})
 
 def select(request):
     return render(request,'h2.html')

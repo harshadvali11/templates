@@ -1,17 +1,269 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>second html</title>
+	<title>HTML_FORMS</title>
+	<style type="text/css">
+		div
+		{
+			background-color:lightsalmon;
+			height:150px;
+			width:50%;
+			border-radius:20px;
+			margin-top:20px;
+		}
+		form
+		{
+			padding:40px;
+		}
+	</style>
 </head>
 <body>
-    <select>
-		<option>html</option>
-		<option>css</option>
-		<option>python</option>
-		<option>hgkg</option>
-  </select>
-    
+<h1>HTML FORM TAGS</h1>
+	<div>
+		<form>
+			<label for="usn">Username</label>
+			<input type="text" name="u1" id="usn"><br>
+			<label for="pw">Password</label>
+			<input type="password" name="p1" id="pw"><br>
+			<input type="submit" name="b1" value="SUB">
+		</form>
+	</div>
+	<!--Form With Allignments-->
+	<div>
+		<form>
+			<table>
+			<tr>
+			   <td><label for="usn">Username</label></td>
+			   <td><input type="text" name="u1" id="usn"></td>
+			 </tr>
+			 <tr>
+			   <td><label for="pw">Password</label></td>
+			   <td><input type="password" name="p1" id="pw"></td>
+			 </tr>
+			 <tr>
+			   <td colspan="2" align="center"><input type="submit" name="b1"             value="SUB"></td>
+			  </tr>
+			</table>
+		</form>
+	</div>
 </body>
 </html>
+<div>
+		<!--SELECT AND OPTION-->
+		<form>
+			<label>Select A City</label>
+			<select>
+				<option>...select...</option>
+				<option>Bangalore</option>
+				<option>Mumbai</option>
+				<option>Chennai</option>
+			</select>
+		</form>
+	</div>
+	<!--Textarea tag(for commenting)-->
+	<div>
+		<form>
+			<label>Enter Your Message</label>
+			<textarea cols="20"rows="5">
+				
+			</textarea>
+		</form>
+	</div>
+	<div>
+		<form>
+			<label>Select A City</label>
+			<input list="city" name="c1">
+			<datalist id="city">
+				<option>Bangalore</option>
+				<option>Mumbai</option>
+				<option>Chandigarh</option>
+				<option>Chennai</option>
+			</datalist>
+		</form>
+	</div>
+<h1>FORM INPUT TYPES</h1>
+<!--Type text-->
+	<div>
+		<form>
+			<label>Username</label>
+			<input type="text" name="u1">
+		</form>
+	</div>
+	<!--Type password-->
+	<div>
+		<form>
+			<label>Password</label>
+			<input type="password" name="p1">
+		</form>
+	</div>
+	<!--Type submit-->
+	<div>
+		<form>
+			<label>Submit</label>
+			<input type="submit" name="s1" value="SUB">
+		</form>
+	</div>
+	<!--Type Reset-->
+	<div>
+		<form>
+			<label>Reset</label>
+			<input type="Reset" name="r1" value="RES">
+		</form>
+	</div>
+	<!--Type radio-->
+	<div>
+		<form>
+			<label>Is Java Is Easy?</label>
+			<input type="radio" name="r">Yes
+			<input type="radio" name="r">No
+		</form>
+	</div>
+	<!--Type checkbox-->
+	<div>
+		<form>
+			<label>Select Your Hobbies</label>
+			<input type="checkbox" name="r">Eating
+			<input type="checkbox" name="r">Coding
+			<input type="checkbox" name="r">Sleeping
+
+		</form>
+	</div>
+<h1>HTML5 Input Types</h1>
+<!--Color-->
+	<div>
+		<form>
+			<label>Select a color</label>
+			<input type="color" name="cr">
+		</form>
+	</div>
+	<!--date-->
+	<div>
+		<form>
+			<label>Select a date</label>
+			<input type="date" name="cr">
+		</form>
+	</div>
+	<!--date and time-->
+	<div>
+		<form>
+			<label>Select date and time</label>
+			<input type="datetime-local" name="cr">
+		</form>
+	</div>
+	<!--time-->
+	<div>
+		<form>
+			<label>Select  time</label>
+			<input type="time" name="cr">
+		</form>
+	</div>
+	<!--week-->
+	<div>
+		<form>
+			<label>Select  week</label>
+			<input type="week" name="cr">
+		</form>
+	</div>
+	<!--week-->
+	<div>
+		<form>
+			<label>Select  Month</label>
+			<input type="Month" name="cr">
+		</form>
+	</div>
+	<!--email-->
+	<div>
+		<form>
+			<label>Enter Email</label>
+			<input type="email" name="cr">
+			<input type="submit" name="t1">
+		</form>
+	</div>
+	<!--search-->
+	<div>
+		<form>
+			<label>Search</label>
+			<input type="search" name="cr">
+			<input type="submit" name="t1">
+		</form>
+	</div>
+	<!--number-->
+	<div>
+		<form>
+			<label>Select Your Age</label>
+			<input type="number" name="cr" min="18"max="60">
+			<input type="submit" name="t1">
+		</form>
+	</div>
+	<!--URL-->
+	<div>
+		<form>
+			<label>Enter Your Website</label>
+			<input type="url" name="cr">
+			<input type="submit" name="t1">
+		</form>
+	</div>
+<h1>Form Special Attributes</h1>
+<!--Required-->
+	<div>
+		<form>
+			<label>Username*</label>
+			<input type="text" name="cr" required="required">
+			<input type="submit" name="t1">
+		</form>
+	</div>
+	<!--Read only-->
+	<div>
+		<form>
+			<label>Username*</label>
+			<input type="text" name="cr" value="kishore" readonly="readonly">
+			<input type="submit" name="t1">
+		</form>
+	</div>
+	<!--diabled-->
+	<div>
+		<form>
+			<label>Username*</label>
+			<input type="text" name="cr" value="kishore" disabled="disabled">
+			<input type="submit" name="t1">
+		</form>
+	</div>
+	<!--size-->
+	<div>
+		<form>
+			<label>Username*</label>
+			<input type="text" name="cr" value="kishore" size="7px">
+			<input type="submit" name="t1">
+		</form>
+	</div>
+	<!--no validate-->
+	<div>
+		<form novalidate="novalidate">
+			<label>Enter Email</label>
+			<input type="email" name="cr">
+			<input type="submit" name="t1">
+		</form>
+	</div>
+	<div>
+		<form>
+			<label>Username*</label>
+			<input type="text" name="cr" autofocus="autofocus">
+			<input type="submit" name="t1">
+		</form>
+	</div>
+	<!--Placeholder-->
+	<div>
+		<form>
+			
+			<input type="text" name="cr" placeholder="Username">
+			<input type="submit" name="t1">
+		</form>
+	</div>
+	<!--Pattern-->
+	<div>
+		<form>
+			<label>Twitter Username</label>
+			<input type="text" name="cr" pattern="^[A-Za-z0-9_]{1,15}$" >
+			<input type="submit" name="t1">
+		</form>
+	</div>
